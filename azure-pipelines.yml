@@ -1,0 +1,16 @@
+trigger:
+- master
+
+pool: 
+  vmImage: 'ubuntu-latest'  # Use Linux instead of Windows
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.x'
+
+- script: |
+    dotnet build --configuration Release
+    dotnet test
+  displayName: 'Build and Test'

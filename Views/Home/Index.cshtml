@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-4">Welcome to Disaster Alleviation Foundation</h1>
+    <p class="text-center lead">Helping communities in need by tracking disasters, donations, and volunteers.</p>
+
+    <div class="row text-center mt-5">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Disasters</h5>
+                    <p class="card-text">View and manage all disaster events.</p>
+                    <a class="btn btn-primary" asp-controller="Disasters" asp-action="Index">Go to Disasters</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Goods Donations</h5>
+                    <p class="card-text">Track donations received from generous donors.</p>
+                    <a class="btn btn-success" asp-controller="GoodsDonations" asp-action="Index">Go to Donations</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Volunteers</h5>
+                    <p class="card-text">Manage and connect with volunteers.</p>
+                    <a class="btn btn-warning" asp-controller="Volunteers" asp-action="Index">Go to Volunteers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
